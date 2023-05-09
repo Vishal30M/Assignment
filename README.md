@@ -1,97 +1,193 @@
-# HTML & CSS3 Course
+<a name="readme-top"></a>
 
-If you are not familiar with linters, read [root level README](../README.md).
+<div align="center">
 
-## Set-up GitHub Actions
+  [![](https://github.com/Vishal30M/Assignment/blob/Assignment/image/Group%203.png)
+  <br/>
+</div>
 
-Please do the following **steps in this order**:
+# 📗 Table of Contents
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-   - **Remember** to use the file linked above
-   - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub actions checks:
+[📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [📹 Video Description](#video-description)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👤 Author](#author)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+# Ventures
 
-![gh actions checks](../assets/images/gh-actions-html-css-checks.png)
+> This project is my assignment given by Mr. Washim Khan(Senior UI/UX Designer), I created it with HTML, CSS and JavaScript.
 
-Click on the `Details` link of each action to see the full output and the errors that need to be fixed:
+## 🛠 Built With <a name="built-with"></a>
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+### Tech Stack <a name="tech-stack"></a>
 
-## Set-up linters in your local env
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML5</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS3</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">JavaScript</a></li>
+  </ul>
+</details>
 
-**Note**: The `npm` package manager is going to create a `node_modules` directory to install all of your dependencies. You shouldn't commit that directory. To avoid that, you can create a [`.gitignore`](https://git-scm.com/docs/gitignore) file and add `node_modules` to it:
+### Key Features <a name="key-features"></a>
+
+- **Responsive Design.**
+- **Pixel Perfect design.**
+- **Multiple pages app.**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Additional tools
+ - Google fonts
+
+## 📹 Video Description <a name="video-description"></a>
+
+- [Here is a video walk through given by myself.](https://www.loom.com/share/48124edd14ed4e3a8c5eb6cffdd60e80)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Here is the link to the live experience](https://vishal30m.github.io/Sports-summit-India/).
+
+> |     | Mobile version                      | Desktop version                      |     |
+> | --- | ----------------------------------- | ------------------------------------ | --- |
+> |     | ![Screenshot1](#) | ![Screenshot2](#) |
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- A web browser to view output e.g [Google Chrome](https://www.google.com/chrome/).
+- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
+- `node` should be installed in your local machine, [node website](https://nodejs.org/en/download/).
+- Install the `npm` package manager use this [to install both node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
+
+### Setup
+
+Clone this repository to your desired folder or download the Zip folder:
 
 ```
-# .gitignore
-node_modules/
+git clone https://github.com/Vishal30M/Assignment.git
 ```
 
-### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- Navigate to the location of the folder in your machine:
 
-An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more.
+**``you@your-Pc-name:~$ cd Technopreneur``**
 
-You can get the Lighthouse report by any of the following ways:
+### Install
 
-- [In Chrome DevTools](https://developers.google.com/web/tools/lighthouse#devtools)
-- [From the command line](https://developers.google.com/web/tools/lighthouse#cli)
-- [As a Node module](https://developers.google.com/web/tools/lighthouse#programmatic)
-- [From a web UI](https://developers.google.com/web/tools/lighthouse#psi)
+To install all dependencies, run:
 
-To access the report generated by Lighthouse on your pull request, click the `Details` link for the `Linters/Lighthouse` check and you will see the full output of the action:
+```
+npm install
+```
 
-![lighthouse report](../assets/images/lighthouse-report.png)
+### Usage
 
-### [Webhint](https://webhint.io/)
+To run the project, follow these instructions:
 
-A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors.
+- After Cloning this repo to your local machine.
+- Open the `index.html` in your browser.
 
-**NOTE:** If you are running on Windows, you need to initialize npm to create `package.json` file. 
-   ```
-   npm init -y
-   ```
+### Run tests
 
-1. Run
-   ```
-   npm install --save-dev hint@7.x
-   ```
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.hintrc](.hintrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run
-   ```
-   npx hint .
-   ```
-5. Fix validation errors.
+To run tests, run the following command:
 
-### [Stylelint](https://stylelint.io/)
+- Track HTML linter errors run:
+```
+npx hint .
+```
+- Track CSS linter errors run:
+```
+npx stylelint "**/*.{css,scss}"
+```
+- Track JavaScript linter errors run:
+```
+npx eslint .
+```
+### Deployment <a name="deployment"></a>
 
-A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
+You can deploy this project using: GitHub Pages,
+- I used GitHub Pages to deploy my website.
+- For more information about publishing sources, see "[About GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)".
 
-1. Run
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+## Authors
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+<!-- Only Change Username for Different Accounts -->
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+👤 **Vishal Mishra**
+ Platform | Badge |
+ --- | --- |
+ **GitHub**  | [@Vishal30M](https://github.com/Vishal30M)
+ **Twitter** | [@Vismiss30](https://twitter.com/Vismiss30)
+ **LinkdIn** | [vishal-kumar-mishra](https://www.linkedin.com/in/vishal-kumar-mishra-0a5226232/)
 
-## Have you already completed the Sass lessons?
+## 🔭 Future Features <a name="future-features"></a>
 
-If you completed the Sass lessons you may prefer to work with SCSS files, if that's the case you need to perform
-a few modifications to the linter configuration files.
+- [ ] **Implement Transitions Animation for hover effect.**
+- [ ] **Implement a Sign up page.**
+- [ ] **Add more pages.**
 
-1. In the file `.github/workflows/linters.yml` [line 48](https://github.com/microverseinc/linters-config/blob/master/html-css/.github/workflows/linters.yml#L48) replace `"**/*.{css,scss}"` with `"**/*.scss"`
-2. Use `npx stylelint "**/*.scss"` to lint you SCSS files and not the generated CSS
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Once you've done the previous steps you can focus on your SCSS files and not in fixing the generated CSS output
-every time.
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Vishal30M/Sports-summit-India/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- The original design idea by [Washim Khan](https://xd.adobe.com/view/fb059007-6c03-42e7-9bdc-337d1b096e2a-ae56/?fullscreen).
+- A big thank to Mr. Washim Khan for allowing me to work on his design.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ❓ FAQ <a name="faq"></a>
+
+- **Can I fork and reuse the repository**
+
+  - Yes please, feel free.
+
+- **Can I improve the repository, and my changes will be accepted if they are good?**
+
+  - Yes please, nice ideas are welcome, please.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License
+
+This project is [MIT](/LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
