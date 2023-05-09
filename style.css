@@ -40,15 +40,15 @@ body {
   justify-content: flex-start;
   gap: 20px;
   height: 50vh;
-  padding: 15px 15px;
+  padding: 55px 55px;
   list-style: none;
 }
 
 .a-links {
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
-  color: #040404;
+  color: #fffefe;
   text-decoration: none;
 }
 
@@ -196,6 +196,7 @@ button img {
   left: 10px;
   z-index: -8;
   opacity: 0.8;
+  width: 30px;
 }
 
 .bot-r {
@@ -203,6 +204,7 @@ button img {
   bottom: 10px;
   right: 10px;
   z-index: -8;
+  width: 30px;
 }
 
 .bot-l {
@@ -210,6 +212,7 @@ button img {
   bottom: 10px;
   left: 40px;
   z-index: -8;
+  width: 50px;
 }
 
 #product {
@@ -268,7 +271,7 @@ button img {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% 90%;
-  padding-top: 4rem;
+  padding-top: 7rem;
   padding-bottom: 4rem;
   align-items: center;
   display: flex;
@@ -288,15 +291,15 @@ button img {
   top: 12%;
   right: 3%;
   z-index: 8;
-  width: 100px;
+  width: 80px;
 }
 
 .top-l2 {
   position: absolute;
-  top: 5%;
+  top: 7rem;
   left: 70px;
   z-index: 8;
-  width: 100px;
+  width: 60px;
 }
 
 .our-service h2 {
@@ -344,11 +347,13 @@ button img {
 }
 
 .patch h3 {
-  padding: 0 15px;
+  padding: 7px 15px;
+  margin: 0;
 }
 
 .patch img {
-  width: 10%;
+  width:fit-content;
+  height: fit-content;
 }
 
 .ice img {
@@ -490,18 +495,15 @@ footer {
     display: none;
   }
 
-  nav.up-nav a:hover,
-  nav.menu-bigscreen ul li a:hover,
-  nav.menu-mobile ul li a:hover {
-    color: #fff;
-    transition: all 0.2s ease-in-out;
-    transform: scale(1.3);
-  }
+ 
+  
 
   nav.menu-bigscreen ul li a:hover,
   nav.menu-mobile ul li a:hover {
-    color: #e96625;
+    color: #0d0d0d;
+    border: 1px solid #e96625;
     transition: all 0.2s ease-in-out;
+    transform: scale(1.3);
   }
 
   nav.menu-bigscreen ul li a:last-child {
@@ -726,7 +728,7 @@ footer {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 100% 90%;
-    padding-top: 4rem;
+    padding-top: 7rem;
     padding-bottom: 4rem;
     align-items: center;
     display: flex;
@@ -761,8 +763,8 @@ footer {
   .our {
     left: 8%;
     position: absolute;
-    margin-bottom: 0;
-    top: 0;
+  top: 5rem;
+   
   }
 
   .service-list {
@@ -781,6 +783,7 @@ footer {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
   }
 
   .serv-1 li p {
@@ -811,8 +814,8 @@ footer {
   .patch img {
     padding-top: 10px;
     padding-right: 0;
-    width: 12%;
-    height: 10%;
+    width: fit-content;
+    height: fit-content;
   }
 
   .ice img {
@@ -1007,19 +1010,16 @@ footer {
     display: none;
   }
 
-  nav.up-nav a:hover,
-  nav.menu-bigscreen ul li a:hover,
-  nav.menu-mobile ul li a:hover {
-    color: #fff;
+
+  nav.menu-bigscreen ul li a:hover
+   {
+    color: #0d0d0d;
+    text-decoration: underline solid 2px #e96625;
     transition: all 0.2s ease-in-out;
     transform: scale(1.3);
   }
 
-  nav.menu-bigscreen ul li a:hover,
-  nav.menu-mobile ul li a:hover {
-    color: #e96625;
-    transition: all 0.2s ease-in-out;
-  }
+  
 
   nav.menu-bigscreen ul li a:last-child {
     padding: 0 10px;
@@ -1169,19 +1169,23 @@ footer {
     top: 40px;
     left: 10px;
     z-index: -8;
+    width: 40px;
+
   }
 
   .bot-r {
     position: absolute;
     bottom: 0;
     z-index: -8;
+    width: 40px;
   }
 
   .bot-l {
     position: absolute;
     bottom: 10px;
-    left: 40px;
+    left: 60px;
     z-index: -8;
+    width: 100px;
   }
 
   #product {
@@ -1270,7 +1274,7 @@ footer {
     top: 12%;
     right: 60px;
     z-index: 8;
-    width: 100px;
+    width: 120px;
   }
 
   .top-l2 {
@@ -1285,7 +1289,7 @@ footer {
     left: 17%;
     position: absolute;
     margin-bottom: 0;
-    top: 15%;
+    top: 12%;
     font-size: 34px;
   }
 
@@ -1295,16 +1299,14 @@ footer {
     width: 50%;
   }
 
-  .serv-1 {
-
-
-  }
+ 
 
   .serv-1 li {
     list-style: none;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
   }
 
   .serv-1 li p {
@@ -1329,15 +1331,16 @@ footer {
   }
 
   .patch h3 {
-    padding: 0 15px;
+    padding: 7px 15px;
+    margin: 0;
     font-size: 15px;
   }
 
   .patch img {
     padding-top: 10px;
     padding-right: 0;
-    width: 12%;
-    height: 10%;
+    width: fit-content;
+    height: fit-content;
   }
 
   .ice img {
