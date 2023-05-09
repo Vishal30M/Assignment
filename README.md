@@ -64,7 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Here is the link to the live experience](https://vishal30m.github.io/Sports-summit-India/).
+- [Here is the link to the live experience](https://vishal30m.github.io/Assignment/).
 
 > |     | Mobile version                      | Desktop version                      |     |
 > | --- | ----------------------------------- | ------------------------------------ | --- |
